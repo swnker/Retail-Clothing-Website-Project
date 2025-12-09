@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!--meta name="description" content="Testing things out.."-->
+    <title> All products - H&N</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" width="70px">
+        </div>
+        <nav>
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="products.html">Products</a></li>
+             <li><a href="">About Us</a></li>
+          </ul>
+        </nav>
+
+        <!--search-->
+        <div id="searchicon">
+          <i class="fas fa-search" style="color: white;"></i>
+        </div>
+        <!--search-->
+
+        <div id="carticon">
+          <i class="ri-shopping-bag-line" style="color: white;"></i>
+          <span class="cart-item-count"></span>
+        </div>
+        <div id="accicon">
+          <i class="fas fa-user" style="color: white;"></i>
+        </div>
+    </div>
+
+<!--search-->
+  <section class="search">
+    <form>
+      <i class="fas fa-search" style="color: black;"></i>
+      <input type="text" name="" id="search-item" placeholder="Search products" onkeyup="search1()">
+    </form>
+
+    <div class="search-list" id="search-list">
+      <div class="listing" data-href="productdetails.html">
+        <img src="https://balenciaga.dam.kering.com/m/674890dddd2ed682/Large-783399TSVB41041_F.jpg?v=1">
+        <div class="s-details">
+          <h2>Ripped T-Shirt</h2>
+          <h3>RM100.00</h3>
+        </div>
+      </div>
+
+      <div class="listing" data-href="productdetails2.html">
+        <img src="https://balenciaga.dam.kering.com/m/76a77dd41e23b6d9/Large-764235TQVR99016_F.jpg?v=1">
+        <div class="s-details">
+          <h2>Statue of Liberty Shirt</h2>
+          <h3>RM90.00</h3>
+        </div>
+      </div>
+
+      <div class="listing" data-href="productdetails3.html">
+        <img src="https://balenciaga.dam.kering.com/m/60081946ebee243b/Large-819022TRVQ71048_F.jpg?v=2">
+        <div class="s-details">
+          <h2>Grey Sweatshirt</h2>
+          <h3>RM140.00</h3>
+        </div>
+      </div>
+
+      <div class="listing" data-href="productdetails4.html">
+        <img src="https://balenciaga.dam.kering.com/m/2f8f524e8dfb4d35/Large-787357TQVT81083_F.jpg?v=1">
+        <div class="s-details">
+          <h2>Activewear Sweatpants</h2>
+          <h3>RM120.00</h3>
+        </div>
+      </div>
+
+      <div class="listing" data-href="productdetails6.html">
+        <img src="https://balenciaga.dam.kering.com/m/11054b47c8d186d0/Large-803264TRVR49012_F.jpg?v=2">
+        <div class="s-details">
+          <h2>Valentine's Day Jacket</h2>
+          <h3>RM160.00</h3>
+        </div>
+      </div>
+
+      <div class="listing" data-href="productdetails5.html">
+        <img src="https://balenciaga.dam.kering.com/m/4a7874c399ac108d/Large-803266TRVA21576_F.jpg?v=2">
+        <div class="s-details">
+          <h2>Agaicnelab Sweatpants</h2>
+          <h3>RM110.00</h3>
+        </div>
+      </div>
+
+    </div>
+
+    <i class="ri-close-line" id="search-close"></i>
+  </section>
+<!--search-->
+
+  <div class="cart">
+    <h2 class="cart-title">Your Cart</h2>
+    <div class="cart-content">
+      <!--div class="cart-box">
+        <img src="https://balenciaga.dam.kering.com/m/674890dddd2ed682/Large-783399TSVB41041_F.jpg?v=1" class="cart-img">
+        <div class="cart-detail">
+          <h2 class="cart-product-title">Ripped T-Shirt</h2>
+          <span class="cart-price">100$</span>
+          <div class="cart-quantity">
+            <button id="decrement">-</button>
+            <span class="number">1</span>
+            <button id="increment">+</button>
+          </div>
+      </div>
+      <i class="ri-delete-bin-line cart-remove"></i>
+    </div> -->
+  </div>
+
+  <div class="totals">
+    <div class="totals-title">Total</div>
+    <div class="totals-price">RM0</div>
+  </div>
+    <button class="buttonbuy">Check Out</button>
+    <i class="ri-close-line" id="cart-close"></i>
+  </div>
+
+<!--Single Product Detail-->
+ <div class="smallcontainer singleproduct">
+   <div class="row">
+     <div class="col2">
+       <img src="https://balenciaga.dam.kering.com/m/674890dddd2ed682/Large-783399TSVB41041_F.jpg?v=1" width="100%">
+
+     </div>
+     <div class="col2">
+       <p>Products / Shirts</p>
+       <h2>Ripped T-Shirt</h2>
+       <h4>RM100.00</h4>
+       <select>
+         <option>Select Size</option>
+         <option>Small</option>
+         <option>Medium</option>
+         <option>Large</option>
+       </select>
+
+       <div class="btn add-cart">
+         Add to Cart
+         <i class="ri-shopping-bag-line add-cart" style="color: white;"></i>
+       </div>
+
+       <h3>Product Details</h3>
+       <p>A rugged, effortlessly cool ripped grey t-shirt, perfect for a street style or a laid-back look. Made for comfort with an edgy twist.</p>
+     </div>
+   </div>
+ </div>
+
+ <!--other products-->
+  <div class="smallcontainer">
+    <div class="rowrow2">
+      <h2>Other Products:</h2>
+    </div>
+  </div>
+
+  <div class="smallcontainer">
+
+      <div class="row">
+
+          <div class="col3">
+            <a href="productdetails2.html"><img src="https://balenciaga.dam.kering.com/m/76a77dd41e23b6d9/Large-764235TQVR99016_F.jpg?v=1"></a>
+              <h4>Statue of Liberty Shirt</h4>
+              <div class="rating">
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-regular fa-star fa-xs"></i>
+              </div>
+              <p>RM90.00</p>
+          </div>
+
+          <div class="col3">
+            <a href="productdetails4.html"><img src="https://balenciaga.dam.kering.com/m/2f8f524e8dfb4d35/Large-787357TQVT81083_F.jpg?v=1"></a>
+              <h4>Activewear Sweatpants</h4>
+              <div class="rating">
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-regular fa-star fa-xs"></i>
+              </div>
+              <p>RM120.00</p>
+            </div>
+
+          <div class="col3">
+            <a href="productdetails3.html"><img src="https://balenciaga.dam.kering.com/m/60081946ebee243b/Large-819022TRVQ71048_F.jpg?v=2"></a>
+              <h4>Grey Sweatshirt</h4>
+              <div class="rating">
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+              </div>
+              <p>RM140.00</p>
+          </div>
+      </div>
+
+      </div>
+
+
+<!--footer-->
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col1">
+          <h3>We accept</h3>
+          <div class="payment">
+            <img src="images/payment.png">
+          </div>
+        </div>
+
+        <div class="footer-col2">
+          <img src="images/logo2.png">
+          <p>Elevate Your Style, Embrace the Comfort.</p>
+        </div>
+
+        <div class="footer-col3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Return Policy</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+
+        <div class="footer-col4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2025 - H&N</p>
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+
+  </body>
+
+
+
+</html>
